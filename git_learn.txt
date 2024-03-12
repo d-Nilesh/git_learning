@@ -10,4 +10,6 @@
                               git --All
                               git --A   
 
-# to commit this file changes
+# to commit this file changes: git commit -m "learning git"
+                               
+   # to commit w/o staging: git commit -a -m "learing git"
