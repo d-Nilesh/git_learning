@@ -27,7 +27,10 @@
              eg : git checkout -b emergency_fix
       Note : After doing the code changes in the new branch we need to do all those add and commit in new branch
 }
-
+# Merging the current branch to master branch:
+  Step1 : 1st switch to the master branch. i.e git checkout master
+  Step2 : Now merge the current or master branch with the new_branch. i.e git merge <new_branch_name>
+  Step3(optional) : Since the work for new branch is over we can delete that new branch. i.e git branch -d <new_branch_name>
 
 
 
