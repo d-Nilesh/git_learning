@@ -14,4 +14,6 @@
                                
    # to commit w/o staging: git commit -a -m "learing git"
 
-# to see the log, i.e history of commit: git log  
+# to see the log, i.e history of commit: git log 
+
+ 
