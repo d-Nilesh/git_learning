@@ -16,7 +16,7 @@
 
 # To see the log, i.e history of commit: git log 
 
------------------------------------------------------ Git Branch ---------------------------------------------------------
+----------------------------------------------------------------- Git Branch -----------------------------------------------------------------
 
 # To create a new Branch: git branch <branch_name> 
 # To check on which branch we are in, and checking new branch created or not: git branch
