@@ -17,5 +17,21 @@
 # To see the log, i.e history of commit: git log 
 
 ----------------------------------------------------- Git Branch ---------------------------------------------------------
-# working with the branches
- 
+
+# To create a new Branch: git branch <branch_name> 
+# To check on which branch we are in, and checking new branch created or not: git branch
+# To switch b/w the branched: git checkout <branch_name> 
+  
+{   To change from the current branch to different branch : git checkout new_branch_name
+      Note : shortcut >> using -n option on checkout  will create a new branch, and move to it, if it does not exit
+             eg : git checkout -b emergency_fix
+      Note : After doing the code changes in the new branch we need to do all those add and commit in new branch
+}
+
+
+
+
+
+
+
+
