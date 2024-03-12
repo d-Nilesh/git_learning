@@ -1,0 +1,13 @@
+# to initialize a git in the folder : git init 
+# to check the status of the current directory : git status 
+                                                 git status -- short
+                                                    tags:
+                                                        ?? --> untracked files
+                                                        A  --> files added to the stage 
+                                                        M  --> Modified files
+                                                        D  --> Deleted files 
+# to stage a file in the git: git add <filename>
+                              git --All
+                              git --A   
+
+# to commit this file changes
