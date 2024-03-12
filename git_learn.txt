@@ -1,19 +1,21 @@
-# to initialize a git in the folder : git init 
-# to check the status of the current directory : git status 
+# To initialize a git in the folder: git init 
+# To check the status of the current directory: git status 
                                                  git status -- short
-                                                    tags:
+                                                    Tags:
                                                         ?? --> untracked files
-                                                        A  --> files added to the stage 
+                                                        A  --> Files added to the stage 
                                                         M  --> Modified files
                                                         D  --> Deleted files 
-# to stage a file in the git: git add <filename>
+# To stage a file in the git: git add <filename>
                               git --All
                               git --A   
 
-# to commit this file changes: git commit -m "learning git"
+# To commit this file changes: git commit -m "learning git"
                                
-   # to commit w/o staging: git commit -a -m "learing git"
+   # to commit w/o staging: git commit -a -m "learning git"
 
-# to see the log, i.e history of commit: git log 
+# To see the log, i.e history of commit: git log 
+
+----------------------------------------------------- Git Branch ---------------------------------------------------------
 
  
