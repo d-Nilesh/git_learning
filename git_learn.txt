@@ -33,8 +33,3 @@
   Step3(optional) : Since the work for new branch is over we can delete that new branch. i.e git branch -d <new_branch_name>
 
 
-
-
-
-
-
