@@ -12,3 +12,97 @@
   Now, go back into github and see that the repository has been updated.
 
 # we can now commit directly in git-hub and click on "commit changes" add some description and then click on "Commit directly to the master branch".
+
+----------------------------------------------------------- GIT PULL---------------------------------------------------------------------------
+# Git Pull:
+    >> Jab koi humlog team me kam karenge, then sab koi ko up to date rahna jaroori hai. 
+    >> Jab bhi kabhi humlog project me kam karna start karenge tab, you should get the most recent changes to your local copy.
+    >> With git you can do that with <pull>.
+    >> <pull> is a combination of 2 different commands: <fetch> and <merge>
+
+# Git Fetch:
+    >> fetch gets all the change history of a tracked branch/repo.
+    >> matlab ki <fetch> command se humlog jo changes hua hai git-hub me usko batata hai git ko. {isse humlog directly logs ko nahi dekh sakte, lekin git ko 
+                                                                                                 pata chal jata hai.}
+        > git fetch origin 
+    
+    >> after that when you will see the git status. then git will say how much commit we are behind.
+    
+    >> We can also double check by viewing the log: 
+         > git log origin/master
+    
+    >> We can also verify by differences b/w the origin master and local master
+         > git diff origin/master
+    
+    >> after seeing the differences we can safely merge.
+         > git merge origin/master
+           {What does this means?
+            merge combines the current branch, with a specified branch. And we have confirmed that the updates are as expected, and we can merge our 
+            current branch (i.e master) with origin/master}
+         
+    >> now you can check the status.
+         > git status
+
+## Git Pull:
+   >> If we just want to update our local repository, without going through all the above steps. then we can use <pull> command
+   >> pull is combination of 2 commands fetch + merge. Means what we are doing with fetch and merge command, we can do that with pull command also.
+         > git pull origin
+
+
+# Push changes to GitHub:
+suppose we have done some changes in our local repository and we want to update it in github also then after commit we use <push> command.
+         > git push origin
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Pulling a branch that is made on github. And we want it on our local.
+    
+    here commands like "git status" or "git branch" will not work.
+    So we use "git branch -a" for both local and remote repositorys and "git branch -r" for only remote repositorys
+
+    Now we need to change our current branch. for this use: git checkout <branchname>
+    Now do : git pull  >> this will pull that branch to the local
+    Now chcek in local: git branch
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Solving the "remote origin already exits" error in four different ways:
+
+## Why this error: Remotes have names to identify them, and you can have as many remotes per repository as you need or want. However, you can't have two remotes with the same name. So if you try to add a remote with the same name as an already existing remote, boom! Fatal error.
+
+> If you want to be really sure the remote called origin actually exists, you can easily check that by running the following command: git remote
+    That will make your Git list all existing remotes for the current repository.
+> If you want to get more detail, you can add the verbose parameter with the remote command, like this: git remote -v
+    That will return not only the names of each remote but also its URLs.
+
+Solution 1: Remove the existing remote 
+    Create a new repository online using GitHub or GitLab.
+    Go to your local repository and remove the existing origin remote. command: git remote remove origin
+       Note: Origin is a name and not some command, which we can give always
+    Add the new online repository as the correct origin remote.
+    Push your code to the new origin.
+
+Solution 2: Update the existing remote's url
+    git remote set-url <REMOTE-NAME> <NEW-URL> 
+    Note: Here remote-name can be origin or anything that we want to update
+
+Solution 3: Rename the existing remote 
+    git remote rename <old-name> <new-name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
