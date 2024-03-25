@@ -1,0 +1,14 @@
+# to create a new Repository on GitHub: 
+       >click on "New repository" >> click on "Create repository"
+
+# Pushing the local repository to git-hub:
+       > copy the url and paste it in the command-line as follows;
+       > git remote add origin https://github.com/nilesh352/Learning-Git.git
+             {Note: git remote add origin <url> will specify that you are adding a remote repository, with the specified url as an origin to your Git repo}
+             {Note: here origin is not a command its a name given to the primary remote repository. We can use diff names also.}     
+
+# Now we are going to push our master branch to the origin url, and set it as the default remote branch.
+       > git push --set-upstream origin master
+  Now, go back into github and see that the repository has been updated.
+
+# we can now commit directly in git-hub and click on "commit changes" add some description and then click on "Commit directly to the master branch".
